@@ -85,7 +85,7 @@ export const zodToAvro = (
       return {
         type: "array",
         items: zodToAvro(
-          `${name}-value`,
+          `${name}_value`,
           zodArray.value._def.type,
           options,
           cache
